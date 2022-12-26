@@ -82,7 +82,6 @@
         width: 80%;
     }
 
-
     .legend {
         display: flex;
         flex-direction: column;
@@ -91,5 +90,16 @@
         align-items: center;
         align-content: center;
         overflow: scroll;
+    }
+
+    @media screen and (orientation:portrait) {
+        .title {
+            font-size: 3vh;
+            text-align: center;
+        }
+        .text {
+            font-size: 2vh;
+            width: 80%;
+        }
     }
 </style>

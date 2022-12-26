@@ -1,5 +1,5 @@
 <script>
-    import { stickers } from "../../scripts/stickers";
+    import { stickers } from "../../../scripts/stickers";
     let height = window.innerHeight * 0.01
     window.addEventListener('resize', function(event) {
         height = window.innerHeight * 0.01

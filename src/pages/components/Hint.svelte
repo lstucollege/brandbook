@@ -1,4 +1,5 @@
 <script>
+    export let text
     import { onMount } from "svelte";
 
     let display = 'flex'
@@ -15,7 +16,7 @@
 
 <span class="hint {hide}" style="display: {display}">
     <img src="https://img.icons8.com/material-outlined/96/null/hint.png" alt="" class="hint-icon"/>
-    <div class="hint-text">Большинство элементов интерактивные! Развлекайтесь!</div>
+    <div class="hint-text">{text}</div>
 </span>
 
 <style>

@@ -1,8 +1,8 @@
 <script>
-    import Legend from "./components/Legend.svelte";
-    import Sources from "./components/Sources.svelte";
-    import Stickers from "./components/Stickers.svelte";
-    import Telegram from "./components/Telegram.svelte";
+    import Legend from "./components/Mascot/Legend.svelte";
+    import Sources from "./components/Mascot/Sources.svelte";
+    import Stickers from "./components/Mascot/Stickers.svelte";
+    import Telegram from "./components/Mascot/Telegram.svelte";
     
     let content = Legend
     let active = [true, '', '', '']

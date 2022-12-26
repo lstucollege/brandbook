@@ -12,6 +12,10 @@
     import Font from './pages/Font.svelte';
     import Smm from './pages/SMM.svelte';
     import Hint from './pages/components/Hint.svelte';
+    import woff from './style/DelaGothicOne-Regular.woff'
+    import woff2 from './style/DelaGothicOne-Regular.woff2'
+    import Contacts from './pages/Contacts.svelte';
+    import Guide from './pages/Guide.svelte';
     onMount(() => {
         page.set(Main)
     })
@@ -19,10 +23,12 @@
         { page: Main, name: 'ГЛАВНАЯ' },
         { page: Philosophy, name: 'ФИЛОСОФИЯ' },
         { page: Identity, name: 'АЙДЕНТИКА' },
+        { page: Guide, name: 'ГАЙДЛАЙНЫ' },
         { page: Mascot, name: 'МАСКОТ' },
         { page: Souvenir, name: 'СУВЕНИРКА' },
         { page: Font, name: 'ШРИФТЫ' },
         { page: Smm, name: 'SMM' },
+        { page: Contacts, name: 'КОНТАКТЫ' }
     ]
     let state = false
 
@@ -37,7 +43,12 @@
     
 </script>
 
-<Hint/>
+<svelte:head>
+    <link rel="preload" href="{woff}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{woff2}" as="font" type="font/woff2" crossorigin>
+</svelte:head>
+
+<Hint text="Большинство элементов интерактивные! Развлекайтесь!"/>
 <main>
     <nav>
         <img src="{menuImg}" alt="" class="menu-btn" on:click={menuHandler} on:keypress={menuHandler}>
