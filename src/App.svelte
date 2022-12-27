@@ -14,8 +14,6 @@
     import Hint from './pages/components/Hint.svelte';
     import woff from './style/DelaGothicOne-Regular.woff'
     import woff2 from './style/DelaGothicOne-Regular.woff2'
-    import Contacts from './pages/Contacts.svelte';
-    import Guide from './pages/Guide.svelte';
     onMount(() => {
         page.set(Main)
     })
@@ -23,12 +21,10 @@
         { page: Main, name: 'ГЛАВНАЯ' },
         { page: Philosophy, name: 'ФИЛОСОФИЯ' },
         { page: Identity, name: 'АЙДЕНТИКА' },
-        { page: Guide, name: 'ГАЙДЛАЙНЫ' },
         { page: Mascot, name: 'МАСКОТ' },
         { page: Souvenir, name: 'СУВЕНИРКА' },
         { page: Font, name: 'ШРИФТЫ' },
         { page: Smm, name: 'SMM' },
-        { page: Contacts, name: 'КОНТАКТЫ' }
     ]
     let state = false
 
@@ -250,7 +246,7 @@
 
     :global(::-webkit-scrollbar-thumb) {
         border-radius: 5px;
-        background: linear-gradient(90deg, #FF00E5 0%, #0094FF 100%);
+        background: linear-gradient(0deg, #FF00E5 0%, #0094FF 100%);
         width: 5px;
         height: 5px;
         cursor: pointer;
